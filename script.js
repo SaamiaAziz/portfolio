@@ -26,7 +26,7 @@ navItems.forEach(item => {
 // Mobile menu toggle
 if (menuBtn) {
     menuBtn.addEventListener('click', () => {
-        navLinks.classList.toggle('show');
+        navLinks.classList.toggle('active');
     });
 }
 
