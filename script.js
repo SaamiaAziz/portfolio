@@ -24,11 +24,12 @@ navItems.forEach(item => {
 });
 
 // Mobile menu toggle
-if{
-menuBtn.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
-});
+if(menuBtn){
+    menuBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+    });
 }
+
 // --- Typing Effect ---
 const typeText = ["Data Scientist", "Power Bi Developer", "Python Developer", "Graphic Designer"];
 let typeIndex = 0,
