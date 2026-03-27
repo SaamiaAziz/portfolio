@@ -26,7 +26,7 @@ navItems.forEach(item => {
 // Mobile menu toggle
 if{
 menuBtn.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
+    navLinks.classList.toggle('show');
 });
 }
 // --- Typing Effect ---
