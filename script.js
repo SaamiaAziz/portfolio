@@ -24,11 +24,9 @@ navItems.forEach(item => {
 });
 
 // Mobile menu toggle
-if (menuBtn) {
-    menuBtn.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-    });
-}
+menuBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
 
 // --- Typing Effect ---
 const typeText = ["Data Scientist", "Power Bi Developer", "Python Developer", "Graphic Designer"];
