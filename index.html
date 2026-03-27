@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saamia Aziz· AI & Data Scientist Portfolio</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Plus Jakarta Sans (Modern Tech) -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="bg-glow"></div>
+    <canvas id="bgCanvas"></canvas>
+
+    <nav class="navbar">
+        <a href="#" class="logo" onclick="switchPage('home')">
+            <i class="fa-solid fa-layer-group"></i> SAAMIA
+        </a>
+        <button class="mobile-menu-btn" id="menuToggle"><i class="fas fa-bars"></i></button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#" data-page="home" class="nav-item active">Home</a></li>
+            <li><a href="#" data-page="projects" class="nav-item">Projects</a></li>
+            <li><a href="#" data-page="certificates" class="nav-item">Certificates</a></li>
+            <li><a href="#" data-page="contact" class="nav-item">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-container">
+        <!-- HOME -->
+        <div id="home" class="section active-section">
+            <div class="hero-card">
+                <div class="hero-content">
+                    <h1>Hello, I'm <br><span class="gradient-text">Saamia Aziz</span></h1>
+                    <div class="hero-tagline">
+                        <span id="typewriter"></span>
+                    </div>
+                    <div class="glass-badge"><i class="fas fa-star"></i>AI Engineer & Creative Technologist</div>
+
+                    <p class="hero-bio">
+                        Transforming raw data into actionable intelligence. I build intelligent systems, immersive dashboards, and scalable solutions using <strong>Power BI, Python ,</strong> and <strong>AI Technologies</strong>.
+                    </p>
+
+                    <div class="hero-stats">
+
+                        <div class="stat-box">
+                            <span class="stat-num">11+</span>
+                            <span class="stat-label">Credentials</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-num">5</span>
+                            <span class="stat-label">Technologies</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-num">3.14</span>
+                            <span class="stat-label">CGPA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROJECTS -->
+        <div id="projects" class="section">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <p>Exploring the intersection of code and data.</p>
+                <div class="header-line"></div>
+            </div>
+            <div class="grid-layout">
+
+                <!-- Advanced CPU Scheduler -->
+                <div class="card tilt-card">
+                    <div class="card-icon"><i class="fas fa-microchip"></i></div>
+                    <h3 class="card-title">Advanced CPU Scheduler</h3>
+                    <p class="card-desc">
+                        Comprehensive CPU scheduling simulator implementing FCFS, SJF, Priority, Round Robin, and EDF algorithms with real-time visualization, Gantt charts, and detailed performance metrics comparison.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">Algorithms</span>
+                        <span class="tech-tag">OS</span>
+                        <span class="tech-tag">Multithreading</span>
+                    </div>
+                </div>
+
+                <!-- Airline Reservation System -->
+                <div class="card tilt-card">
+                    <div class="card-icon"><i class="fas fa-plane-departure"></i></div>
+                    <h3 class="card-title">Airline Reservation System</h3>
+                    <p class="card-desc">
+                        Complete airline booking system with customer management, flight registration for 6 international destinations, ticket generation with pricing, and file-based record keeping. Features color-coded console interface.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">OOP</span>
+                        <span class="tech-tag">File I/O</span>
+                        <span class="tech-tag">Console UI</span>
+                    </div>
+                </div>
+
+                <!-- Inventory Management System -->
+                <div class="card tilt-card">
+                    <div class="card-icon"><i class="fas fa-boxes-stacked"></i></div>
+                    <h3 class="card-title">Inventory Management System</h3>
+                    <p class="card-desc">
+                        Linked-list based inventory system with CRUD operations, file persistence, search functionality, and color-coded console output. Implements efficient data structures for real-time inventory tracking.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">Data Structures</span>
+                        <span class="tech-tag">File I/O</span>
+                        <span class="tech-tag">Algorithms</span>
+                    </div>
+                </div>
+
+                <!-- Snake Game -->
+                <div class="card tilt-card">
+                    <div class="card-icon"><i class="fas fa-gamepad"></i></div>
+                    <h3 class="card-title">Classic Snake Game</h3>
+                    <p class="card-desc">
+                        Real-time snake game implementation with dynamic tail growth, collision detection, score tracking, and smooth keyboard controls. Features wrap-around boundaries and increasing difficulty.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">Game Loop</span>
+                        <span class="tech-tag">Real-time</span>
+                        <span class="tech-tag">OOP</span>
+                    </div>
+                </div>
+
+                <div class="card tilt-card">
+                    <div class="card-icon"><i class="fas fa-gamepad"></i></div>
+                    <h3 class="card-title">Ed tech Analysis dashboard using Power Bi</h3>
+                    <p class="card-desc">
+                        Dashboard analyzing ed tech market trends, user engagement, and revenue streams with interactive visualizations and DAX metrics for data-driven insights.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">Game Loop</span>
+                        <span class="tech-tag">Real-time</span>
+                        <span class="tech-tag">OOP</span>
+                    </div>
+                </div>
+
+                <div class="card tilt-card">
+                    <div class="card-icon"><i class="fas fa-robot"></i></div>
+                    <h3 class="card-title">Open Shortest path first (OSPF)</h3>
+                    <p class="card-desc">
+                        i made this project for computer networks subject in 4th semester. It implements the OSPF routing protocol, simulating dynamic network topology changes and real-time path optimization using Dijkstra's algorithm for efficient routing decisions.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Cisco Packet Tracer</span>
+
+                    </div>
+                </div>
+                <!-- AI Agents & LLMs -->
+                <div class="card tilt-card">
+                    <div class="card-icon"><i class="fas fa-robot"></i></div>
+                    <h3 class="card-title">Rent Calculator</h3>
+                    <p class="card-desc">
+                        I made this project using python for calculating rent for a property. It takes into account various factors such as location, size, amenities, and market trends to provide an accurate rent estimate.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Python</span>
+
+                    </div>
+                </div>
+                <div class="card tilt-card">
+                    <div class="card-icon"><i class="fas fa-robot"></i></div>
+                    <h3 class="card-title">Online Shopping Website</h3>
+                    <p class="card-desc">
+                        I made this website in my 3rd Semester for Full Stack Developer Subject
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">html</span>
+                        <span class="tech-tag">Css</span>
+                        <span class="tech-tag">Js</span>
+                        <span class="tech-tag">Images</span>
+                    </div>
+                </div>
+                <div class="card tilt-card">
+                    <div class="card-icon"><i class="fas fa-robot"></i></div>
+                    <h3 class="card-title">Super Market Sales Dashboard </h3>
+                    <p class="card-desc">
+                        I made this project on personal interest
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Microsoft Power Bi</span>
+
+                    </div>
+                </div>
+                <div class="card tilt-card">
+                    <div class="card-icon"><i class="fas fa-robot"></i></div>
+                    <h3 class="card-title">Text to Image Generation</h3>
+                    <p class="card-desc">
+                        I made this project for Artificial Intelligence Subject in 5th Semester. It generates images from text using Azure AI services, demonstrating prompt engineering and LLM integration for creative content generation.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Html</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JS</span>
+                        <span class="tech-tag">LLMs</span>
+                    </div>
+                </div>
+
+                <div class="card tilt-card">
+                    <div class="card-icon"><i class="fas fa-robot"></i></div>
+                    <h3 class="card-title">Library Management System </h3>
+                    <p class="card-desc">
+                        I made this project for my 3rd Semester for Data Structures Subject. It is a library management system that allows users to manage book inventory, track borrowing and returns, and generate reports using a linked list data structure for efficient data
+                        handling.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">C++</span>
+
+                    </div>
+                </div>
+
+                <div class="card tilt-card">
+                    <div class="card-icon"><i class="fas fa-robot"></i></div>
+                    <h3 class="card-title">Maryiam E-commerce Sales Dashboard </h3>
+                    <p class="card-desc">
+                        I made this project on personal interest. It is a sales dashboard for an e-commerce business that provides insights into sales performance, customer behavior, and inventory management using interactive visualizations and data analysis techniques.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">C++</span>
+
+                    </div>
+                </div>
+                <div class="card tilt-card">
+                    <div class="card-icon"><i class="fas fa-robot"></i></div>
+                    <h3 class="card-title">Human Action Recognition</h3>
+                    <p class="card-desc">
+                        I made this project for Digital Image Processing Subject in 5th semester. It uses Azure AI to analyze video frames and classify human actions, showcasing real-time computer vision capabilities and LLM integration for enhanced recognition accuracy.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Deep Learning Models</span>
+
+                    </div>
+                </div>
+
+                <!-- Al-Noor E-commerce Sales -->
+                <div class="card tilt-card">
+                    <div class="card-icon"><i class="fas fa-chart-pie"></i></div>
+                    <h3 class="card-title">Al-Noor E‑commerce Sales</h3>
+                    <p class="card-desc">
+                        Advanced Power BI dashboard dissecting product revenue streams and category performance metrics with interactive visualizations and DAX calculations.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Power BI</span>
+                        <span class="tech-tag">DAX</span>
+                        <span class="tech-tag">Analytics</span>
+                        <span class="tech-tag">Visualization</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CERTIFICATES - ALL 11 INCLUDED -->
+        <div id="certificates" class="section">
+            <div class="section-header">
+                <h2>Credentials</h2>
+                <p>Verified certifications from global leaders.</p>
+                <div class="header-line"></div>
+            </div>
+            <div class="grid-layout">
+
+                <!-- 1. AI Agents for Beginners -->
+                <div class="card tilt-card">
+                    <div class="card-icon"><i class="fas fa-robot"></i></div>
+                    <h3 class="card-title">AI Agents for Beginners</h3>
+                    <p class="card-desc">Simplilearn • Oct 2025</p>
+                    <button class="view-btn" onclick="openModal('https://z-cdn-media.chatglm.cn/files/ef11fa24-cf23-43a0-a5e5-15a4c5254845.png?auth_key=1873416201-757e9975c0814160bddc18be963d088e-0-fc2cb7d0a26aea2f0277fa2ac75df03b')">
+                        View Credential <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- 2. AI for Everyone -->
+                <div class="card tilt-card">
+                    <div class="card-icon"><i class="fas fa-brain"></i></div>
+                    <h3 class="card-title">AI for Everyone</h3>
+                    <p class="card-desc">Pakistan Blockchain Institute • Oct 2023</p>
+                    <button class="view-btn" onclick="openModal('https://z-cdn-media.chatglm.cn/files/2b4c6d03-87b6-40b9-a774-3ceca8e002b1.jpeg?auth_key=1873829108-0f390b9da6424811ba27fed21e9c3458-0-a97a62ae8517c89de4f61703c5276d07')">
+                        View Credential <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- ICETI 2025 -->
+                <div class="card tilt-card">
+                    <div class="card-icon"><i class="fas fa-users"></i></div>
+                    <h3 class="card-title">ICETI 2025</h3>
+                    <p class="card-desc">3rd International Conference • Oct 2025</p>
+                    <button class="view-btn" onclick="openModal('https://z-cdn-media.chatglm.cn/files/ad48e1aa-0909-4732-8168-916b7ab03c73.png?auth_key=1873829108-0715bc8737ca4b9091551479a8a5317d-0-2da282fd6e454b8034e87e5e4a804376')">
+                        View Credential <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Data Science & Analytics -->
+                <div class="card tilt-card">
+                    <div class="card-icon"><i class="fas fa-database"></i></div>
+                    <h3 class="card-title">Data Science & Analytics</h3>
+                    <p class="card-desc">HP LIFE / HP Foundation • Feb 2026</p>
+                    <button class="view-btn" onclick="openModal('https://z-cdn-media.chatglm.cn/files/ca6efea1-12a3-4a88-b40b-3b73f02379a6.png?auth_key=1873829108-8646fdbda2954fdeb8a522aa7b1d7a37-0-733e8d7ea01a9c47356d6291fa9cf37d')">
+                        View Credential <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Ethical Hacking -->
+                <div class="card tilt-card">
+                    <div class="card-icon"><i class="fas fa-shield-halved"></i></div>
+                    <h3 class="card-title">Ethical Hacking</h3>
+                    <p class="card-desc">FBCOEW Computer Science • Apr 2025</p>
+                    <button class="view-btn" onclick="openModal('https://z-cdn-media.chatglm.cn/files/23cd8324-aceb-46fa-9b33-78c58ad57a50.jpeg?auth_key=1873829108-c6095f48e3704331b0e3d03e5659e7fb-0-184abc0e0b2f1b72035c8a0e964e5ad4')">
+                        View Credential <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Power BI -->
+                <div class="card tilt-card">
+                    <div class="card-icon"><i class="fas fa-chart-simple"></i></div>
+                    <h3 class="card-title">Power BI Data Modelling</h3>
+                    <p class="card-desc">Microsoft • Jan 2026</p>
+                    <button class="view-btn" onclick="openModal('https://z-cdn-media.chatglm.cn/files/8b7d9ef7-ebd8-4444-ab8f-0f5c67df268e.png?auth_key=1873829108-06070274109e4ee5a527eba239305a53-0-39e838adb507edcdbc4b0adbe2fdf830')">
+                        View Credential <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Innovation & Sustainability -->
+                <div class="card tilt-card">
+                    <div class="card-icon"><i class="fas fa-handshake"></i></div>
+                    <h3 class="card-title">Innovation & Sustainability</h3>
+                    <p class="card-desc">3rd International Conference • Oct 2024</p>
+                    <button class="view-btn" onclick="openModal('https://z-cdn-media.chatglm.cn/files/0b0d9e8c-e8d6-4939-b469-b5de32a729f5.jpeg?auth_key=1873831073-5158ef965974482882b694a4ae96fa5a-0-fce1bcd7bdde1e4743aa37ac2c9bd12a')">
+                        View Credential <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Cybersecurity Awareness -->
+                <div class="card tilt-card">
+                    <div class="card-icon"><i class="fas fa-lock"></i></div>
+                    <h3 class="card-title">Cybersecurity Awareness</h3>
+                    <p class="card-desc">HP LIFE • Mar 2026</p>
+                    <button class="view-btn" onclick="openModal('https://z-cdn-media.chatglm.cn/files/02b99e26-9ed7-4e1a-8062-98092ed0bb89.png?auth_key=1873829108-0d754783c0734ded92ef7776b0086a94-0-e884e95bc0af5e956abd5edb579a46a0')">
+                        View Credential <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Prompt Engineering -->
+                <div class="card tilt-card">
+                    <div class="card-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+                    <h3 class="card-title">Prompt Engineering</h3>
+                    <p class="card-desc">Microsoft • Feb 2026</p>
+                    <button class="view-btn" onclick="openModal('https://z-cdn-media.chatglm.cn/files/b5fc4e3d-a3b7-4e4d-b96b-a849186d415a.png?auth_key=1873829108-d3cc92fdc74b424ea34598aea4e83952-0-634f681fd1cab6c846c2939996e87e2e')">
+                        View Credential <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Azure Cloud -->
+                <div class="card tilt-card">
+                    <div class="card-icon"><i class="fas fa-cloud"></i></div>
+                    <h3 class="card-title">Microsoft Azure Cloud with AI</h3>
+                    <p class="card-desc">Fazaia Bilquis College • Dec 2025</p>
+                    <button class="view-btn" onclick="openModal('https://z-cdn-media.chatglm.cn/files/386b3131-65af-40d0-8324-48e49ab6522b.png?auth_key=1873829108-5e6b9f873bfc4081af5e7fb539576ef2-0-7740bcffc0ed3cd7cdc17abc3b3e656a')">
+                        View Credential <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Understanding Prompt Engineering -->
+                <div class="card tilt-card">
+                    <div class="card-icon"><i class="fas fa-bolt"></i></div>
+                    <h3 class="card-title">Understanding Prompt Engineering</h3>
+                    <p class="card-desc">DataCamp • Feb 2026</p>
+                    <button class="view-btn" onclick="openModal('https://z-cdn-media.chatglm.cn/files/731ae56f-c806-47f6-8373-35ed3dd64c69.png?auth_key=1873829108-9efd4d4f8d5e46919ba73660d8fbfac4-0-f1c0a4bc24be64a386ad987838366203')">
+                        View Credential <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTACT -->
+        <div id="contact" class="section">
+            <div class="section-header">
+                <h2>Let's Collaborate</h2>
+                <p>Ready to turn data into decisions?</p>
+                <div class="header-line"></div>
+            </div>
+            <div class="contact-container">
+                <div>
+                    <h3 style="margin-bottom:1.5rem">Get in Touch</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <span>saamiaaziz6@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                        <span>+92 371 5344548</span>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <span>PAF Nur Khan, Rawalpindi</span>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="social-row">
+                        <a href="https://www.linkedin.com/in/saamia-aziz-a44978386/" target="_blank" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/SaamiaAziz" target="_blank" class="social-btn"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <form onsubmit="handleFormSubmit(event)">
+                    <input type="text" class="form-input" placeholder="Your Name" required>
+                    <input type="email" class="form-input" placeholder="Your Email" required>
+                    <textarea class="form-input" rows="4" placeholder="Message" required></textarea>
+                    <button class="submit-btn" type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="certModal" class="modal">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <div id="toast-container"></div>
+
+    <!-- Link to external JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
