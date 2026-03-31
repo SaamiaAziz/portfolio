@@ -23,17 +23,10 @@ navItems.forEach(item => {
     });
 });
 
-if (menuBtn) {
-    menuBtn.addEventListener('click', () => {
-        navLinks.classList.toggle('show');
-    });
-}
-
-
 // Mobile menu toggle
-// menuBtn.addEventListener('click', () => {
-//    navLinks.classList.toggle('show');
-//});
+menuBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+});
 
 // --- Typing Effect ---
 const typeText = ["Data Scientist", "Power Bi Developer", "Python Developer", "Graphic Designer"];
